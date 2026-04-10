@@ -37,12 +37,14 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:opacity-90 hover:shadow-xl hover:scale-[1.02] transition-all text-white rounded-full px-8 shadow-lg shadow-primary/25 h-12"
-              >
-                Analyze My Profile <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+              <Link to="/features/match-score" className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 hover:shadow-xl hover:scale-[1.02] transition-all text-white rounded-full px-8 shadow-lg shadow-primary/25 h-12"
+                >
+                  Analyze My Profile <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
               <Link to="/how-it-works">
                 <Button size="lg" variant="outline" className="rounded-full px-8 h-12 w-full sm:w-auto hover:bg-primary/5 hover:text-primary hover:border-primary/30 transition-all">
                   See How It Works

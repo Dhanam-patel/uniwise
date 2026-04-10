@@ -7,7 +7,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
-  logLevel: 'error', // Suppress warnings, only show errors
+  logLevel: 'info',
+  server: {
+    host: 'localhost',
+  },
   plugins: [
     react(),
   ],
