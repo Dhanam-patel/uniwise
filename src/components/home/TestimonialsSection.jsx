@@ -22,8 +22,8 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-24 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-background via-sky-50/30 to-background overflow-hidden">
+      <div className="relative max-w-7xl mx-auto">
         <SectionHeader
           badge="Testimonials"
           title="Trusted by Students Worldwide."

@@ -1,4 +1,5 @@
 import HeroSection from "../components/home/HeroSection";
+import CloudVisualization from "../components/home/CloudVisualization";
 import ProblemSection from "../components/home/ProblemSection";
 import SolutionSection from "../components/home/SolutionSection";
 import FeaturesGrid from "../components/home/FeaturesGrid";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      <CloudVisualization />
       <ProblemSection />
       <SolutionSection />
       <FeaturesGrid />

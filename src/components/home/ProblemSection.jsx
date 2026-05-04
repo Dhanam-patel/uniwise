@@ -28,8 +28,15 @@ const problems = [
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-background via-sky-50/30 to-background overflow-hidden">
+      {/* Decorative clouds */}
+      <div className="absolute top-10 right-20 w-72 h-72 opacity-5 pointer-events-none">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="hsl(203 89% 53%)">
+          <path d="M 50 100 Q 50 80, 70 80 Q 80 60, 100 60 Q 120 60, 130 80 Q 150 80, 150 100 Q 150 120, 130 120 L 70 120 Q 50 120, 50 100 Z" />
+        </svg>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto">
         <SectionHeader
           badge="The Problem"
           title="The Study Abroad Industry Has a Trust Problem."
@@ -55,6 +62,6 @@ export default function ProblemSection() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
   );
 }

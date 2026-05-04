@@ -27,8 +27,15 @@ const solutions = [
 
 export default function SolutionSection() {
   return (
-    <section className="py-24 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-background via-sky-50/30 to-background overflow-hidden">
+      {/* Decorative clouds */}
+      <div className="absolute bottom-0 -left-20 w-96 h-96 opacity-5 pointer-events-none">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="hsl(183 100% 50%)">
+          <path d="M 40 110 Q 40 85, 65 80 Q 75 55, 100 55 Q 130 55, 140 80 Q 160 85, 160 110 Q 160 135, 140 140 L 60 140 Q 40 135, 40 110 Z" />
+        </svg>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto">
         <SectionHeader
           badge="The Solution"
           title="Built for Students. Not Universities."
@@ -54,6 +61,6 @@ export default function SolutionSection() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
   );
 }

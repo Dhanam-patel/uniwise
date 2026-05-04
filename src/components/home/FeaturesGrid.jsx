@@ -15,8 +15,8 @@ const features = [
 
 export default function FeaturesGrid() {
   return (
-    <section className="py-24 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-background via-sky-50/20 to-background overflow-hidden">
+      <div className="relative max-w-7xl mx-auto">
         <SectionHeader
           badge="Features"
           title="Everything You Need to Decide With Confidence."
