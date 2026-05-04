@@ -7,9 +7,9 @@ const roiData = [
 
 export default function DashboardMockup() {
   return (
-    <div className="bg-card border border-border rounded-2xl shadow-2xl shadow-primary/10 overflow-hidden">
+    <div className="bg-card border border-border rounded-lg shadow-xl shadow-primary/5 overflow-hidden">
       {/* Browser chrome */}
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/50">
+      <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/30">
         <div className="flex gap-1.5">
           <div className="w-3 h-3 rounded-full bg-rose-400" />
           <div className="w-3 h-3 rounded-full bg-amber-400" />

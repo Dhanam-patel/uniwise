@@ -22,7 +22,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           badge="Testimonials"
@@ -37,7 +37,7 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-card border border-border rounded-2xl p-6"
+              className="bg-card border border-border rounded-lg p-6 hover:shadow-md transition-shadow"
             >
               <div className="flex gap-0.5 mb-4">
                 {[...Array(5)].map((_, j) => (

@@ -28,7 +28,7 @@ const problems = [
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 px-4 bg-card">
+    <section className="py-24 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           badge="The Problem"
@@ -44,9 +44,9 @@ export default function ProblemSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="bg-background border border-border rounded-2xl p-6 hover:shadow-lg transition-shadow"
+              className="bg-card border border-border rounded-lg p-6 hover:shadow-md transition-shadow"
             >
-              <div className={`w-12 h-12 ${problem.bg} rounded-xl flex items-center justify-center mb-4`}>
+              <div className={`w-12 h-12 ${problem.bg} rounded-lg flex items-center justify-center mb-4`}>
                 <problem.icon className={`w-6 h-6 ${problem.color}`} />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">{problem.title}</h3>

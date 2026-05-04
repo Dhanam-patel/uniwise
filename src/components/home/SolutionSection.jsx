@@ -27,7 +27,7 @@ const solutions = [
 
 export default function SolutionSection() {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           badge="The Solution"
@@ -43,9 +43,9 @@ export default function SolutionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all"
+              className="group bg-card border border-border rounded-lg p-6 hover:border-primary/50 hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
                 <item.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>

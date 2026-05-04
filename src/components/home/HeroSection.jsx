@@ -6,11 +6,11 @@ import DashboardMockup from "./DashboardMockup";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 sm:pt-20 sm:pb-28">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-      <div className="absolute top-20 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute top-40 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
+    <section className="relative overflow-hidden pt-12 pb-20 sm:pt-20 sm:pb-28 bg-background">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/3 via-background to-background" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 -left-40 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -20,7 +20,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1.5 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary bg-primary/8 px-3 py-1.5 rounded-lg mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
               Commission-Free Platform
             </span>
@@ -40,13 +40,13 @@ export default function HeroSection() {
               <Link to="/features/match-score" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 hover:shadow-xl hover:scale-[1.02] transition-all text-white rounded-full px-8 shadow-lg shadow-primary/25 h-12"
+                  className="w-full bg-primary hover:bg-primary/90 transition-all text-primary-foreground rounded-lg px-8 shadow-md hover:shadow-lg h-12"
                 >
                   Analyze My Profile <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
               <Link to="/how-it-works">
-                <Button size="lg" variant="outline" className="rounded-full px-8 h-12 w-full sm:w-auto hover:bg-primary/5 hover:text-primary hover:border-primary/30 transition-all">
+                <Button size="lg" variant="outline" className="rounded-lg px-8 h-12 w-full sm:w-auto hover:bg-muted transition-all border-border">
                   See How It Works
                 </Button>
               </Link>
@@ -86,12 +86,12 @@ export default function HeroSection() {
           ].map((stat) => (
             <div
               key={stat.label}
-              className="bg-card border border-border rounded-2xl px-8 py-4 text-center min-w-[160px] shadow-sm"
+              className="bg-card border border-border rounded-lg px-6 py-3 text-center min-w-[140px] shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <div className="text-2xl font-bold text-primary">
                 {stat.value}
               </div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
             </div>
           ))}
         </motion.div>

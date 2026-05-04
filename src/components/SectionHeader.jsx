@@ -10,7 +10,7 @@ export default function SectionHeader({ badge, title, description }) {
       className="text-center max-w-2xl mx-auto mb-12"
     >
       {badge && (
-        <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full mb-4">
+        <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary bg-primary/8 px-3 py-1 rounded-lg mb-4">
           {badge}
         </span>
       )}

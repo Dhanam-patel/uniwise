@@ -22,7 +22,7 @@ const uniwise = [
 
 export default function ComparisonSection() {
   return (
-    <section className="py-24 px-4 bg-card">
+    <section className="py-24 px-4 bg-background">
       <div className="max-w-5xl mx-auto">
         <SectionHeader
           badge="Trust & Transparency"
@@ -37,7 +37,7 @@ export default function ComparisonSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="bg-background border border-border rounded-2xl p-6"
+            className="bg-card border border-border rounded-lg p-6"
           >
             <h3 className="text-lg font-semibold text-foreground mb-5">Traditional Consultancy</h3>
             <ul className="space-y-3">
@@ -56,7 +56,7 @@ export default function ComparisonSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-2xl p-6"
+            className="bg-card border border-primary/20 rounded-lg p-6"
           >
             <h3 className="text-lg font-semibold text-foreground mb-5">Uniwise AI</h3>
             <ul className="space-y-3">
